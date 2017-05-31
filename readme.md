@@ -3,7 +3,7 @@ This package provides a node module for the FatSecret.com rest api.
 
 ## Quick Start
 ```javascript
-const fatAPI = new require('fatsecret')(KEY, SECRET);
+const fatAPI = new (require('fatsecret'))(KEY, SECRET);
 
 fatAPI
   .method('foods.search', {
@@ -32,7 +32,7 @@ fatAPI
     "food_name": "Coffiest",
     "food_type": "Brand",
     "food_url": "http://www.fatsecret.com/calories-nutrition/soylent/coffiest"
- f }
+  }
 ]
 */
 ```
