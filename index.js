@@ -2,9 +2,9 @@
 
 const crypto              = require('crypto');
 const request             = require('request');
-const API_BASE            = 'http://platform.fatsecret.com/rest/server.api';
-const OAUTH_REQUEST_TOKEN = 'http://www.fatsecret.com/oauth/request_token';
-const OAUTH_ACESS_TOKEN   = 'http://www.fatsecret.com/oauth/access_token';
+const API_BASE            = 'https://platform.fatsecret.com/rest/server.api';
+const OAUTH_REQUEST_TOKEN = 'https://www.fatsecret.com/oauth/request_token';
+const OAUTH_ACESS_TOKEN   = 'https://www.fatsecret.com/oauth/access_token';
 
 const DEFAULT_PARAMS = {
   format                : 'json',
