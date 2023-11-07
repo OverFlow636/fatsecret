@@ -1,10 +1,10 @@
 'use strict';
 
 const crypto              = require('crypto');
-const request             = require('request');
-const API_BASE            = 'http://platform.fatsecret.com/rest/server.api';
-const OAUTH_REQUEST_TOKEN = 'http://www.fatsecret.com/oauth/request_token';
-const OAUTH_ACESS_TOKEN   = 'http://www.fatsecret.com/oauth/access_token';
+const request             = require('@cypress/request');
+const API_BASE            = 'https://platform.fatsecret.com/rest/server.api';
+const OAUTH_REQUEST_TOKEN = 'https://www.fatsecret.com/oauth/request_token';
+const OAUTH_ACCESS_TOKEN   = 'https://www.fatsecret.com/oauth/access_token';
 
 const DEFAULT_PARAMS = {
   format                : 'json',
@@ -76,7 +76,7 @@ class FatSecret {
       oauth_consumer_key    : this.key,
       oauth_signature_method: 'HMAC-SHA1'
     };
-    return this._signRequest(OAUTH_ACESS_TOKEN, params);
+    return this._signRequest(OAUTH_ACCESS_TOKEN, params);
   }
 
   /**
